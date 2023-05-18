@@ -2,6 +2,8 @@
 # SPDX-License-Identifier: Apache-2.0
 
 manifest:
+  import-group-filters: false
+
   self:
     west-commands: scripts/west-commands.yml
 
@@ -19,3 +21,4 @@ manifest:
         name-allowlist:
           - cmsis      # required by the ARM port
           - hal_nordic # required by the custom_plank board (Nordic based)
+          - bsim
